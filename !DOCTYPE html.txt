@@ -271,9 +271,15 @@
         <div class="main-content">
             <div class="card">
                 <div class="card-icon">📄</div>
-                <h2>View Full Document</h2>
-                <p>Download and review the complete Induction Pack. This contains everything you need to start working with us here at UBS.</p>
-                <a href="Induction Pack UBS portal" class="btn secondary" onclick="downloadPDF()">Download PDF (15 pages)</a>
+                <h2>View Full Documents</h2>
+                <ul>
+                    <li>
+                        <a href="Induction Pack UBS portal.pdf" class="btn secondary" target="_blank">Download Induction Pack UBS (PDF)</a>
+                    </li>
+                    <li>
+                        <a href="!DOCTYPE html" class="btn secondary" target="_blank">View HTML Document</a>
+                    </li>
+                </ul>
             </div>
             
             <div class="card">
@@ -522,4 +528,3 @@
     </script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96c02e15e3c56533',t:'MTc1NDY2ODMzNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
-
