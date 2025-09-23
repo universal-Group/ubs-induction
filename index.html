@@ -7,38 +7,50 @@
     <!-- Google Fonts for a modern look -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Roboto:400,500" rel="stylesheet">
     <style>
+        :root {
+            --primary-green: #94c120;
+            --accent-blue: #093c59;
+            --bg-light: #f5f6fa;
+            --bg-white: #fff;
+            --text-black: #1a1a1a;
+            --text-grey: #636e72;
+            --card-grey: #e9ebef;
+            --shadow: 0 8px 32px rgba(44, 62, 80, 0.09);
+        }
         body {
             font-family: 'Roboto', Arial, sans-serif;
-            background: linear-gradient(135deg, #e0ffef 0%, #f0f9ff 100%);
+            background: var(--bg-light);
             margin: 0;
+            color: var(--text-black);
         }
         .container {
             max-width: 950px;
             margin: 35px auto;
             padding: 40px 32px;
-            background: #fff;
+            background: var(--bg-white);
             border-radius: 22px;
-            box-shadow: 0 8px 42px rgba(44, 62, 80, 0.16);
+            box-shadow: var(--shadow);
         }
         .hero {
             text-align: center;
             margin-bottom: 35px;
         }
         .hero img {
-            width: 300px;
+            width: 260px;
             margin-bottom: 14px;
-            filter: drop-shadow(0 4px 18px #b7e3c2);
+            filter: drop-shadow(0 4px 16px var(--primary-green));
+            background: transparent;
         }
         .hero h1 {
             font-family: 'Montserrat', Arial, sans-serif;
-            font-size: 2.5rem;
+            font-size: 2.4rem;
             margin-bottom: 10px;
-            color: #2d3436;
-            letter-spacing: 2px;
+            color: var(--accent-blue);
+            letter-spacing: 1px;
         }
         .hero p {
-            color: #0984e3;
-            font-size: 1.2rem;
+            color: var(--text-grey);
+            font-size: 1.14rem;
             margin-bottom: 0;
             font-weight: 500;
         }
@@ -49,9 +61,9 @@
             justify-content: center;
         }
         .card {
-            background: linear-gradient(125deg, #f5f6fa 80%, #e9f7ef 100%);
+            background: var(--card-grey);
             border-radius: 16px;
-            box-shadow: 0 2px 14px rgba(44, 62, 80, 0.08);
+            box-shadow: 0 2px 14px rgba(44,62,80,0.04);
             padding: 28px 22px;
             min-width: 260px;
             max-width: 340px;
@@ -60,22 +72,25 @@
             flex-direction: column;
             align-items: center;
             transition: transform 0.2s, box-shadow 0.2s;
+            border: 2px solid var(--bg-white);
         }
         .card:hover {
             transform: translateY(-6px) scale(1.03);
-            box-shadow: 0 10px 28px rgba(44, 62, 80, 0.16);
+            box-shadow: 0 10px 28px rgba(44,62,80,0.18);
+            border-color: var(--primary-green);
         }
         .card-icon {
             font-size: 2.5rem;
             margin-bottom: 12px;
-            color: #00b894;
+            color: var(--primary-green);
         }
         .card h2 {
             text-align: center;
             margin-bottom: 11px;
-            color: #333;
-            font-size: 1.35rem;
+            color: var(--accent-blue);
+            font-size: 1.25rem;
             font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 700;
         }
         .card ul {
             list-style: none;
@@ -90,7 +105,7 @@
             display: inline-block;
             width: 100%;
             padding: 15px;
-            background: linear-gradient(135deg, #0984e3 60%, #00b894 100%);
+            background: linear-gradient(90deg, var(--primary-green) 60%, var(--accent-blue) 100%);
             color: white;
             text-decoration: none;
             border-radius: 8px;
@@ -100,27 +115,28 @@
             border: none;
             cursor: pointer;
             font-size: 17px;
-            box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+            box-shadow: 0 2px 8px rgba(44,62,80,0.09);
             letter-spacing: 1px;
         }
         .btn:hover {
-            background: linear-gradient(135deg, #00b894 60%, #0984e3 100%);
+            background: linear-gradient(90deg, var(--accent-blue) 60%, var(--primary-green) 100%);
             transform: translateY(-2px) scale(1.04);
-            box-shadow: 0 8px 24px rgba(44,62,80,0.18);
+            box-shadow: 0 8px 24px rgba(44,62,80,0.11);
         }
         .btn.secondary {
-            background: linear-gradient(135deg, #b2bec3 60%, #636e72 100%);
+            background: var(--accent-blue);
             color: #fff;
         }
         .btn.secondary:hover {
-            background: linear-gradient(135deg, #636e72 60%, #b2bec3 100%);
+            background: var(--primary-green);
+            color: var(--text-black);
         }
         .contact-section {
             text-align: center;
             margin-top: 40px;
             margin-bottom: 14px;
             padding: 20px 0;
-            border-top: 1px solid #e5e7eb;
+            border-top: 1px solid #d8dbdf;
             font-size: 1.05rem;
         }
         .hr-contacts {
@@ -133,7 +149,7 @@
         .contact-card {
             display: flex;
             align-items: center;
-            background: #eaf6fb;
+            background: var(--card-grey);
             border-radius: 14px;
             padding: 10px 18px;
             box-shadow: 0 2px 8px rgba(44,62,80,0.04);
@@ -143,17 +159,20 @@
             height: 38px;
             border-radius: 50%;
             margin-right: 12px;
-            background: #dff9fb;
+            background: var(--primary-green);
             display: inline-block;
             object-fit: cover;
+            border: 2px solid var(--accent-blue);
         }
         .footer {
             text-align: center;
-            color: #636e72;
+            color: var(--accent-blue);
             opacity: 0.95;
             margin-top: 32px;
             font-size: 1rem;
             padding-bottom: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
         }
         @media (max-width: 800px) {
             .container {padding: 18px;}
@@ -169,7 +188,7 @@
     <div class="container">
         <div class="hero">
             <img src="ume-logo.png" alt="Universal Mechanical & Electrical Logo">
-            <h1>Welcome to UME Induction Portal</h1>
+            <h1>UME Induction Portal</h1>
             <p>Your gateway for secure and easy onboarding</p>
         </div>
         <div class="cards">
@@ -196,15 +215,11 @@
             </div>
         </div>
         <div class="contact-section">
-            <strong>Contact HR:</strong>
+            <strong style="color: var(--accent-blue); font-weight: 700;">Contact HR:</strong>
             <div class="hr-contacts">
                 <div class="contact-card">
-                    <img src="https://ui-avatars.com/api/?name=Sam+Westbrook&background=0984e3&color=fff&size=64" class="contact-avatar" alt="Sam Westbrook">
-                    <span>Sam Westbrook<br><a href="mailto:sam.westbrook@univeralcs.co.uk">sam.westbrook@univeralcs.co.uk</a></span>
-                </div>
-                <div class="contact-card">
-                    <img src="https://ui-avatars.com/api/?name=Aimee+Sheppard&background=00b894&color=fff&size=64" class="contact-avatar" alt="Aimee Sheppard">
-                    <span>Aimee Sheppard<br><a href="mailto:aimee.sheppard@universalcs.co.uk">aimee.sheppard@universalcs.co.uk</a></span>
+                    <img src="https://ui-avatars.com/api/?name=Sam+Westbrook&background=94c120&color=fff&size=64" class="contact-avatar" alt="Sam Westbrook">
+                    <span><strong style="color: var(--accent-blue);">Sam Westbrook</strong><br><a href="mailto:sam.westbrook@univeralcs.co.uk" style="color: var(--primary-green); font-weight:500;">sam.westbrook@univeralcs.co.uk</a></span>
                 </div>
             </div>
         </div>
