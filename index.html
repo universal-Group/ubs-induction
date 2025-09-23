@@ -16,7 +16,8 @@
             --text-grey: #636e72;
             --card-grey: #e9ebef;
             --shadow: 0 8px 32px rgba(44, 62, 80, 0.09);
-            --hover-grey: #e0e0e0;
+            --btn-grey: #d1d5db;
+            --btn-hover-grey: #e5e7eb;
         }
         body {
             font-family: 'Roboto', Arial, sans-serif;
@@ -39,7 +40,7 @@
         .hero img {
             width: 260px;
             margin-bottom: 14px;
-            filter: drop-shadow(0 4px 16px var(--primary-green));
+            /* Removed drop shadow */
             background: transparent;
         }
         .hero h1 {
@@ -108,13 +109,13 @@
             min-width: 120px;
             max-width: 240px;
             padding: 12px;
-            background: linear-gradient(90deg, var(--primary-green) 60%, var(--accent-blue) 100%);
-            color: white;
+            background: var(--btn-grey);
+            color: var(--text-black);
             text-decoration: none;
             border-radius: 8px;
             text-align: center;
             font-weight: 700;
-            transition: all 0.2s ease;
+            transition: background 0.2s, color 0.2s, transform 0.2s;
             border: none;
             cursor: pointer;
             font-size: 16px;
@@ -123,17 +124,17 @@
             margin: 0 auto;
         }
         .btn:hover {
-            background: var(--hover-grey);
+            background: var(--btn-hover-grey);
             color: var(--text-black);
-            transform: scale(0.95);
-            box-shadow: 0 4px 12px rgba(44,62,80,0.11);
+            transform: scale(0.97);
+            box-shadow: 0 4px 12px rgba(44,62,80,0.10);
         }
         .btn.secondary {
-            background: var(--accent-blue);
-            color: #fff;
+            background: #cfd8dc;
+            color: var(--text-black);
         }
         .btn.secondary:hover {
-            background: var(--hover-grey);
+            background: var(--btn-hover-grey);
             color: var(--text-black);
         }
         .contact-section {
