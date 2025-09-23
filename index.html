@@ -16,6 +16,7 @@
             --text-grey: #636e72;
             --card-grey: #e9ebef;
             --shadow: 0 8px 32px rgba(44, 62, 80, 0.09);
+            --hover-grey: #e0e0e0;
         }
         body {
             font-family: 'Roboto', Arial, sans-serif;
@@ -103,32 +104,36 @@
         }
         .btn {
             display: inline-block;
-            width: 100%;
-            padding: 15px;
+            width: 90%;
+            min-width: 120px;
+            max-width: 240px;
+            padding: 12px;
             background: linear-gradient(90deg, var(--primary-green) 60%, var(--accent-blue) 100%);
             color: white;
             text-decoration: none;
             border-radius: 8px;
             text-align: center;
             font-weight: 700;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
             border: none;
             cursor: pointer;
-            font-size: 17px;
+            font-size: 16px;
             box-shadow: 0 2px 8px rgba(44,62,80,0.09);
             letter-spacing: 1px;
+            margin: 0 auto;
         }
         .btn:hover {
-            background: linear-gradient(90deg, var(--accent-blue) 60%, var(--primary-green) 100%);
-            transform: translateY(-2px) scale(1.04);
-            box-shadow: 0 8px 24px rgba(44,62,80,0.11);
+            background: var(--hover-grey);
+            color: var(--text-black);
+            transform: scale(0.95);
+            box-shadow: 0 4px 12px rgba(44,62,80,0.11);
         }
         .btn.secondary {
             background: var(--accent-blue);
             color: #fff;
         }
         .btn.secondary:hover {
-            background: var(--primary-green);
+            background: var(--hover-grey);
             color: var(--text-black);
         }
         .contact-section {
@@ -181,6 +186,7 @@
         @media (max-width: 500px) {
             .hero img {width: 80%;}
             .container {padding: 6px;}
+            .btn {width: 100%; max-width: 100%;}
         }
     </style>
 </head>
