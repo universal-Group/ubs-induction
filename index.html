@@ -2,48 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>UME Induction Portal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Documentation Portal</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        /* Your existing CSS styles */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
-            min-height: 100vh;
-            color: #333;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f5f6fa;
+            margin: 0;
         }
-        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
-        .header { text-align: center; color: white; margin-bottom: 40px; padding: 40px 0; }
-        .header h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 300; }
-        .header p { font-size: 1.2rem; opacity: 0.9; }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 28px;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(44, 62, 80, 0.10);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+        .header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: #2d3436;
+        }
+        .header p {
+            color: #636e72;
+            font-size: 1.1rem;
+        }
         .main-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 30px;
-            margin-bottom: 40px;
         }
         .card {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            background: #f1f2f6;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(44, 62, 80, 0.05);
+            padding: 24px;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .card-icon {
-            width: 60px;
-            height: 60px;
-            margin: 0 auto 20px;
-            background: linear-gradient(135deg, #6c757d, #495057);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+            color: #0984e3;
         }
         .card h2 { text-align: center; margin-bottom: 15px; color: #333; font-size: 1.5rem; }
         .card p { text-align: center; color: #666; margin-bottom: 25px; line-height: 1.6; }
@@ -92,8 +99,8 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Employee Documentation Portal</h1>
-            <p>Complete your onboarding documents efficiently and securely</p>
+            <h1>UME Induction Portal</h1>
+            <p>Complete your onboarding documents efficiently and securely for Universal Mechanical & Electrical</p>
         </div>
         <div class="main-content">
             <div class="card">
@@ -101,7 +108,7 @@
                 <h2>View Full Documents</h2>
                 <ul>
                     <li>
-                        <a href="Induction Pack UBS portal.pdf" class="btn secondary" target="_blank" rel="noopener">Download Induction Pack UBS (PDF)</a>
+                        <a href="Induction Pack UME portal.pdf" class="btn secondary" target="_blank" rel="noopener">Download Induction Pack UME (PDF)</a>
                     </li>
                 </ul>
             </div>
@@ -119,7 +126,7 @@
             </div>
         </div>
         <div class="footer">
-            <p>© 2025 Universal Central Services | Secure Document Processing | Contact HR: sam.westbrook@univeralcs.co.uk & aimee.sheppard@universalcs.co.uk</p>
+            <p>© 2025 Universal Mechanical & Electrical | Secure Document Processing | Contact HR: sam.westbrook@univeralcs.co.uk & aimee.sheppard@universalcs.co.uk</p>
         </div>
     </div>
 </body>
